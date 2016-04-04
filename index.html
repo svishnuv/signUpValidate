@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic Sign Up Form</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="mainContainer center-block">
+  <div class="formContainer col-sm-6 col-md-4 panel panel-default">
+    <!-- HTML form for validation demo -->
+    <form action="data.json" method="post" id="signUpForm" novalidate="novalidate">
+
+      <h2 class="panel-heading">Sign Up</h2>
+
+      <div id="form-content" class="panel-body">
+        <fieldset>
+
+          <div class="form-group">
+            <label class="required" for="userName">User Name</label>
+            <input type="text" class="form-control" name="userName" placeholder="example@domain.com" title="Suggestions" data-toggle="popover" data-trigger="hover" data-content="Must be an email and Max 56 Charecters"/>
+          </div>
+
+          <div class="form-group">
+            <label class="required" for="password">Password</label>
+            <input id="password" class="form-control" type="password" name="password" placeholder="Enter Your Password" title="Suggestions" data-toggle="popover" data-trigger="hover" data-content="Must be atleast 6 Charecters" />
+          </div>
+
+          <div class="form-group">
+            <label class="required" for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" name="confirmPassword" placeholder="Enter the Same Password as Above" />
+          </div>
+
+          <div class="form-group">
+            <label class="required" for="firstName">First Name</label>
+            <input type="text" class="form-control" name="firstName" placeholder="Enter Your First Name" title="Suggestions" data-toggle="popover" data-trigger="hover" data-content="Accepts only Letters and a Max of 50 Charecters" />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" name="lastName" placeholder="Enter Your Last Name" title="Suggestions" data-toggle="popover" data-trigger="hover" data-content="Accepts only Letters and a Max of 50 Charecters"/>
+          </div>
+
+          <div class="form-group">
+            <label class="required" for="dob">Birthday</label>
+            <input class="form-control" type="date" id="dob" name="dob" title="Suggestions" data-toggle="popover" data-trigger="hover" data-content="Must be atleast 14 and Not Older than 150!"/>
+            <input class="form-control" type="hidden" id="dob_ISO" name="dob_ISO" />
+          </div>
+
+          <div class="form-group">
+            <input class="form-control submit btn btn-primary" type="submit" value="Sign Up" />
+          </div>
+          
+           <div class="form-group">
+            <input class="form-control reset btn btn-primary" id="signUpFormReset" type="reset" value="Reset" />
+          </div>
+          
+        </fieldset>
+      </div>
+    </form>
+  </div>
+
+  <div class="formStatusContainer text-center ">
+  </div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js'></script>
+<script src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/additional-methods.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

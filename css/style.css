@@ -1,0 +1,16 @@
+.required:after {
+  content: " *";
+}
+
+.mainContainer {
+  margin: 10px;
+}
+
+.formContainer {
+  float: none;
+  margin: 0 auto;
+}
+
+.popover{
+    width:300px;
+}
